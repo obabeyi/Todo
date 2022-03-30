@@ -56,7 +56,6 @@ class TodoController extends Controller
         $data['DeadLine'] = date('Y-m-d', strtotime($data['DeadLine']));
         Todo::create($data);
 
-//        return view('backend.mytasks.index');
         return Redirect()->route('mytasks.index');
     }
 
@@ -113,7 +112,7 @@ class TodoController extends Controller
 
         $text = $request->get('text');
         $search = Todo::where('tasks', 'LIKE', '%' . $text . '%')->limit(30)->latest()->get();
-        $output = '           <table id="example2" class="table table-bordered table-hover">
+        $output = '<table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                 <tr>
                                     <th>No</th>

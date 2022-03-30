@@ -6,7 +6,6 @@
                 <div class="col-sm-6">
                     <h1>Yapılacak İşler</h1>
                 </div>
-
                 </div>
             <div class="row">
 
